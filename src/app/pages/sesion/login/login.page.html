@@ -1,11 +1,52 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <ion-button (click)="irTabs()" expand="block" fill="clear" shape="round">
-    ir a tabs
-  </ion-button>
+  <div class="logo-sesion">
+    <!-- <img src="assets/icon/blob.svg"> -->
+    <img style="height: 100px;" src="assets/icon/shield.svg">
+  </div>
+  
+  <div style="padding: 20px;">
+    <ion-row style="justify-content: center;">
+      <span class="texto-span">INICIAR SESIÓN</span>
+    </ion-row>
+    <br><br>
+    <ion-item class="item-input-text">
+      <ion-input type="text" placeholder="Usuario"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item class="item-input-text">
+      <ion-input type="password" placeholder="Contraseña"></ion-input>
+    </ion-item>
+    <br><br>
+    <ion-button expand="block" class="boton boton-azul-degradado" mode="md">
+      <span>Acceder</span>
+    </ion-button>
+    <br>
+    <ion-row style="justify-content: center;">
+      <!-- <span class="texto-span">Recuperar contraseña</span> -->
+      <a>Recuperar contraseña</a>
+    </ion-row>
+    <br>
+    <ion-row style="justify-content: center;">
+      <span class="texto-span">o inicia sesión con</span>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button expand="block" class="boton boton-redes" mode="md">
+          <img class="logo-redes" src="assets/icon/buscar.svg"/>
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button expand="block" class="boton boton-redes" mode="md">
+          <img class="logo-redes" src="assets/icon/facebook.svg"/>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <br>
+    <ion-row style="justify-content: center;">
+      <span class="texto-span">¿No tienes cuenta?
+        <a (click)="irRegistro()">Regístrate</a>
+      </span>
+    </ion-row>
+  </div>
 </ion-content>

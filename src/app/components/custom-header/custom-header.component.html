@@ -1,0 +1,14 @@
+<ion-header class="ion-no-border" mode="md">
+  <ion-toolbar>
+    <ion-buttons slot="start" *ngIf="backButton">
+      <ion-back-button mode="md" defaultHref="/">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title *ngIf="titulo !== ''">
+      <strong>
+        {{ titulo }}
+      </strong>
+    </ion-title>
+  </ion-toolbar> 
+</ion-header>

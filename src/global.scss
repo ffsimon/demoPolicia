@@ -24,3 +24,45 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* importamos la tipografia desde Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+
+/* Tipografia default para md y ios */
+html.ios {
+  --ion-default-font: -apple-system, BlinkMacSystemFont, 'Nunito', sans-serif;
+}
+
+html.md {
+  --ion-default-font: 'Nunito', sans-serif;
+}
+
+
+
+ion-content {
+  --background: #f3f8fe;
+}
+
+.item-input-text{
+  --inner-border-width: 0px 0px 0px 0px !important;
+  // border: 1px solid #05338D;
+  border-radius: 25px;
+  height: 44px;
+  padding: 0px !important;
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 4px 8px rgba(201, 201, 201, 0.8);
+}
+
+.boton{
+  --border-radius: 25px;
+  --box-shadow: 4px 4px 8px rgba(201, 201, 201, 0.8);
+}
+
+.boton-azul-degradado{
+  //--background: linear-gradient(95deg, #0F3375, #13459C, #1557C0, #196BDE, #2382F7, #4B9CF9, #77B6FB, #A4CEFC, #CCE4FD, #E8F3FE);
+  --background: #0F3375;
+  span{
+    color: white !important;
+  }
+}

@@ -14,6 +14,10 @@ export class LoginPage implements OnInit {
   }
 
   irTabs(){
-    this.navCtrl.navigateForward('/tabs');
+    this.navCtrl.navigateForward('tabs');
+  }
+
+  public irRegistro(){
+    this.navCtrl.navigateForward('registro');
   }
 }
